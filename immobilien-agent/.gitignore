@@ -1,0 +1,9 @@
+# Persönliche Daten – niemals in ein öffentliches Repository
+Immobilien-Investor.xlsx
+analysen/
+berechnet/
+exposes/
+standorte/
+*.pdf
+~$*.xlsx
+.~lock.*
