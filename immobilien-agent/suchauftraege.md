@@ -6,16 +6,16 @@ Benachrichtigung: sofort bzw. täglich per E-Mail. Alle Mails landen im Gmail-La
 ## Regionen
 | Region | Gebiet im Portal |
 |---|---|
-| München | Stadt München + Landkreis München |
-| Münster | Stadt Münster + Kreise Steinfurt, Warendorf, Coesfeld |
-| Passau | Stadt Passau + Landkreis Passau |
+| München | nur Stadt München |
+| Münster (NRW) | nur Stadt Münster |
+| Passau | nur Stadt Passau |
 
 ## Suchaufträge je Region (3 pro Region = 9 pro Portal)
 | Nr | Objektart | Preis bis | Weitere Filter |
 |---|---|---|---|
 | 1 | Eigentumswohnung | 450.000 € | ab 1 Zimmer, kein Erbbaurecht, keine Zwangsversteigerung |
-| 2 | Haus (EFH, DHH, RH) | 450.000 € | kein Erbbaurecht |
-| 3 | Mehrfamilienhaus / Anlageobjekt | 600.000 € | ab 3 Einheiten |
+| 2 | Haus mit 1–2 Wohneinheiten (EFH, ZFH, DHH, RH) | 450.000 € | kein Erbbaurecht |
+| 3 | Mehrfamilienhaus (mehr als 2 Wohneinheiten) | 600.000 € | ab 3 Wohneinheiten |
 
 ## Portale
 | Portal | Konto nötig | Suchauftrag per E-Mail |
