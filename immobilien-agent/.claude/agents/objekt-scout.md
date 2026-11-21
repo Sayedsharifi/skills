@@ -24,10 +24,10 @@ Zusätzlich in der Begründung notieren, falls vorhanden: Energieklasse, Heizung
 geplante Sonderumlagen, Denkmalschutz, Erbbaurecht, Lage im Hochwassergebiet (Passau!).
 
 ## Eintragen
-```
-python3 tools/pipeline.py neu '{"quelle":"...","stadt":"Passau","typ":"ETW","nutzung":"Vermietung","baujahr":1995,"wfl":68,"kaufpreis":219000,"miete":780,"hg_nu":95}'
-```
-Meldet das Skript ein MÖGLICHES DUPLIKAT, vergleiche beide Einträge und setze den Status des schlechteren auf „Abgelehnt“.
+In die Google-Tabelle „Immobilien-Pipeline“ (siehe CLAUDE.md), Blatt Pipeline, nächste freie Zeile:
+A ID (O001 fortlaufend), B Datum, C Link, D Stadt, E Stadtteil, F Typ, G Wohneinheiten, H Baujahr,
+I Wohnfläche, J Kaufpreis, K Kaltmiete, L Miete-Quelle, T Status „Neu“, U Begründung.
+Spalten M–R nie beschreiben. Vorher Duplikate prüfen (Link oder Stadt + Fläche ±2 m² + Preis ±5 %).
 
 ## Fehlende Unterlagen
 Fehlen Teilungserklärung, Protokolle der letzten 3 Jahre, Wirtschaftsplan oder Energieausweis,

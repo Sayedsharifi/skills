@@ -22,7 +22,7 @@ Antwortformat:
 - **3 Hauptgründe**, **3 größte Risiken**, **offene Fragen an den Makler**
 - Kennzeichnung [Sicher] / [Wahrscheinlich] / [Vermutung]
 
-Begründung zurückschreiben: `python3 tools/pipeline.py setze <zeile> '{"begruendung":"...","status":"..."}'`
+Begründung in Spalte U und Status in Spalte T der Google-Tabelle (Pipeline) zurückschreiben.
 
 ## Sanierung
 - Kosten je Gewerk schätzen (Richtwerte im Blatt `Kostenkatalog`, regional anpassen) und die Bandbreite angeben

@@ -31,6 +31,6 @@ Jede Zahl mit Quelle und Stand. Kennzeichne Prognosen mit [Wahrscheinlich] oder 
 ## Werte zurückschreiben
 - Stadtwerte ins Blatt `Marktdaten` (Spalten F–L) per Python/openpyxl. Nur Eingabespalten anfassen.
 - Standortnoten in die Pipeline:
-  `python3 tools/pipeline.py setze <zeile> '{"standortnote":4}'`
+  Spalte S der Google-Tabelle (Pipeline) in der Zeile des Objekts
 
 Einen vorhandenen Bericht verwendest du wieder, wenn er jünger als 6 Monate ist.

@@ -11,21 +11,23 @@ Unteragenten in `.claude/agents/`, führst die Ergebnisse zusammen und berichtes
 - Einkommen, Eigenkapital, Steuersatz und Zielwerte stehen im Blatt `Profil` der Arbeitsmappe.
 
 ## Datenbasis
-Alles läuft über `Immobilien-Investor.xlsx`:
-- `Pipeline`: gefundene Objekte. Schreiben **nur** über `python3 tools/pipeline.py`.
-- `Marktdaten`: Werte je Stadt. Jede Zahl mit Quelle und Datum.
-- `Objektanalyse`: Detailrechnung. Für ein Objekt eine Kopie der Mappe in `analysen/` anlegen.
-- `Bestand` und `Ausgaben`: meine gekauften Immobilien. Nur auf meine ausdrückliche Anweisung ändern.
-- Nach dem Schreiben neu berechnen:
-  `soffice --headless --convert-to xlsx --outdir berechnet Immobilien-Investor.xlsx`
-  und berechnete Werte aus `berechnet/` lesen.
+- **Pipeline (gemeinsam für alle Agenten und den automatischen Suchlauf):** Google-Tabelle
+  „Immobilien-Pipeline“, ID `1MAFbxyoPGHniX8yq7ooHDpSsGraic4jlFSXlQl4pJu8`.
+  Blätter: Pipeline, Quellen, Einstellungen, Suchlauf-Log.
+  In „Pipeline“ nur Spalten A–L und S–V beschreiben; M–R sind Formeln (nie überschreiben).
+- **Detailrechnung und Bestand:** Excel-Datei `Immobilien-Investor.xlsx` im OneDrive-Ordner
+  `Immobilien` (Blätter Profil, Objektanalyse, Bestand, Ausgaben, Kostenkatalog, Kennzahlen).
+  Pro geprüftem Objekt eine Kopie in `Immobilien/analysen/<ID>.xlsx`.
+- `Bestand` und `Ausgaben` nur auf meine ausdrückliche Anweisung ändern.
 
 ## Ablauf
+Agenten sprechen nicht direkt miteinander: Jeder schreibt sein Ergebnis in die Pipeline (Spalte U bzw. analysen/<ID>), der nächste liest es dort.
 1. `objekt-scout` → neue Objekte in die Pipeline (mit Duplikatprüfung).
 2. `standort-analyst` → Standortnote 1–5 und Marktdaten (pro Gebiet nur einmal, danach Wiederverwendung).
 3. `finanzierungs-agent` → aktuelle Zinsen ins Profil, Szenarien für die besten Objekte.
 4. `investment-berater` → Urteil KAUFEN PRÜFEN / NACHVERHANDELN / NICHT KAUFEN mit Begründung.
-5. Du erstellst die **Rangliste** (Top 5) mit je 3 Sätzen Begründung und den größten Risiken.
+5. `verhandlungs-agent` → bei KAUFEN PRÜFEN oder NACHVERHANDELN: Erstangebot, Zielpreis, Schmerzgrenze, Angebotsschreiben (Entwurf), Gesprächsleitfaden.
+6. Du erstellst die **Rangliste** (Top 5) mit je 3 Sätzen Begründung und den größten Risiken.
 
 ## Feste Regeln
 - **Nichts versenden ohne meine Freigabe.** E-Mails an Makler, Banken oder Vermittler nur als Entwurf.
