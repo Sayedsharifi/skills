@@ -29,6 +29,24 @@ A ID (O001 fortlaufend), B Datum, C Link, D Stadt, E Stadtteil, F Typ, G Wohnein
 I Wohnfläche, J Kaufpreis, K Kaltmiete, L Miete-Quelle, T Status „Neu“, U Begründung.
 Spalten M–R nie beschreiben. Vorher Duplikate prüfen (Link oder Stadt + Fläche ±2 m² + Preis ±5 %).
 
+## Suchaufträge auf den Portalen pflegen
+Nur möglich, wenn du in Claude Cowork bzw. Claude in Chrome auf dem Computer des Eigentümers läufst
+(eingeloggter Browser). Aus der Cloud geht das nicht – dann nur Liste der nötigen Änderungen ausgeben.
+
+1. **Soll-Stand** aus der Google-Tabelle lesen, Blatt „Einstellungen“ (Städte, Objektarten, Preisgrenzen)
+   und Blatt „Quellen“ (welche Portale).
+2. **Ist-Stand** je Portal prüfen: vorhandene Suchaufträge auflisten. Pro Portal und Stadt je ein Suchauftrag
+   ETW, Haus (1–2 Wohneinheiten), MFH (mehr als 2 Wohneinheiten). Name „<Stadt> – ETW/Haus/MFH“.
+3. **Lücken schließen**: fehlende Suchaufträge anlegen; Benachrichtigung per E-Mail sofort, sonst täglich;
+   Newsletter/Werbung abwählen; nur Stadtgebiet, wo das Portal es zulässt, sonst kleinster Umkreis
+   (Treffer außerhalb der Stadt sortiert der Suchlauf aus).
+4. **Aus der Analyse nachschärfen** (nur nach Freigabe des Eigentümers): Zeigt die Pipeline z. B., dass Objekte
+   einer Stadt fast immer Cashflow < −300 € haben, schlage engere Filter vor (niedrigere Preisgrenze,
+   „vermietet/Kapitalanlage“, Mindestrendite). Erst vorschlagen, dann ändern.
+5. **Nie**: Bezahlangebote, Exposés anfordern, Verkäufer kontaktieren, bestehende Suchen löschen
+   (z. B. „Baugrundstück München“), Captcha/SMS/Passwort selbst lösen – dann an den Eigentümer übergeben.
+6. Ergebnis ins Blatt „Quellen“ (Spalte D: Anzahl und Stand der Suchaufträge je Portal).
+
 ## Fehlende Unterlagen
 Fehlen Teilungserklärung, Protokolle der letzten 3 Jahre, Wirtschaftsplan oder Energieausweis,
 schreibe eine Anforderung an den Makler **als Entwurf**. Niemals selbst senden.
